@@ -1,2 +1,17 @@
-# tdci-acoustic-diagnostics
-AI-powered Android application designed for acoustic diagnostic analysis of 1.4 TDCi diesel engines, identifying mechanical anomalies via sound frequency signatures.
+# 🚗 TDCi Acoustic Diagnostics (AI-Driven)
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![ML](https://img.shields.io/badge/Machine_Learning-On--Device-orange?style=for-the-badge)
+
+## 📌 Project Overview
+A specialized diagnostic tool for the 1.4 TDCi (Euro 4) engine ecosystem. Since these specific engines often lack comprehensive sensor arrays (like O2/Lambda sensors in early models), this application utilizes on-device microphone sensors to analyze engine "sound signatures" for health monitoring.
+
+## 🚀 Key Technical Features
+- **Fast Fourier Transform (FFT) Processing:** Converts raw engine noise into frequency domain data to identify rhythmic mechanical irregularities.
+- **On-Device ML Inference:** Uses a lightweight model to classify sound patterns associated with common issues like injector ticking, belt wear, or turbo whistling.
+- **Real-time Visualization:** Displays live frequency spectrums using custom Android View components.
+- **Asynchronous Data Handling:** Leverages Kotlin Coroutines for non-blocking audio capture and processing.
+
+## 🛠 Engineering Challenge
+The primary challenge was filtering out background road noise and wind interference to isolate specific mechanical frequencies (700Hz - 3000Hz) where engine wear typically manifests.

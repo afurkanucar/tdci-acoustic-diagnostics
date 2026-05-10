@@ -1,4 +1,12 @@
-# 🚗 TDCi Acoustic Diagnostics (AI-Driven)
+# 🚗 Acoustic Diagnostic Engine (1.4 TDCi Focus)
+
+## 📌 Concept
+A unique Android solution for mechanical health monitoring via sound frequency analysis. Designed for engines without extensive sensor arrays (Legacy Euro 4 systems).
+
+## 🛠 Tech Stack & Methodology
+- **Signal Processing:** Implements Fast Fourier Transform (FFT) to isolate mechanical noise in the 700Hz-3500Hz range.
+- **MVVM Architecture:** Uses LiveData and ViewModel for reactive, lifecycle-aware UI updates.
+- **On-Device Analysis:** Asynchronous audio processing using Kotlin Coroutines for zero-latency feedback.
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
